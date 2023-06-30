@@ -21,8 +21,8 @@ namespace Proiect4._4
         //in registrul software in subcheia UltimulDebug
         string valueName = "UltimulDebug";
         DateTime dateTime = DateTime.Now;
-            //setezi valoarea in registru
-
+        //setezi valoarea in registru
+        string ana;
         private FileSystemWatcher watcher;
 
         public Form1()
@@ -55,7 +55,7 @@ namespace Proiect4._4
             this.Opacity = 0;
             //sa nu se mai vada form ul
         }
-
+        //test
 
 
         private string SelectFolder()
