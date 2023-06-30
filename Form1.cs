@@ -141,7 +141,13 @@ namespace Proiect4._4
                 {//am deja curren user si nu mai trebuie toata adresa
                     if (explorerKey != null)
                     {
-                        explorerKey.DeleteValue(valueName);
+                        try
+                        {
+                            explorerKey.DeleteValue(valueName);
+                        }
+                        catch(Exception ex) {
+                            MessageBox.Show("Cheia e deja stearsa");
+                        }
                     }
                 }
             }
